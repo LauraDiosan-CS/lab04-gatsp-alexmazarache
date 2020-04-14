@@ -28,7 +28,10 @@
     <Compile Include="Repository.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="TSP.py">
+    <Compile Include="Service.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Util.py">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>

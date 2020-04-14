@@ -2,13 +2,14 @@ from random import randint
 
 import Chromosome
 
-class TSP:
-    def __init__(self,probParam,popsize):
-        self.popSize = popsize
-        self.data = probParam
-        self.population=[]
 
-    #cream populatie 
+class Util:
+    def __init__(self,probParam,popsize):
+            self.popSize = popsize
+            self.data = probParam
+            self.population=[]
+
+        #cream populatie 
     def createPop(self):
         for _ in range(0,self.popSize):
             c = Chromosome.Chromosome(self.data)
@@ -53,4 +54,3 @@ class TSP:
 
     def best(self):
         return self.population[0]
-

@@ -36,7 +36,7 @@ class Chromosome:
         self.__fitness = fit
 
     def crossover(self, c):
-        # order XO
+       
         pos1 = randint(-1, self.__problParam['noNodes'] - 1)
         pos2 = randint(-1, self.__problParam['noNodes'] - 1)
         if (pos2 < pos1):
@@ -56,7 +56,7 @@ class Chromosome:
         return offspring
 
     def mutation(self):
-        # insert mutation
+        
         pos1 = randint(0, self.__problParam['noNodes'] - 1)
         pos2 = randint(0, self.__problParam['noNodes'] - 1)
         if (pos2 < pos1):
